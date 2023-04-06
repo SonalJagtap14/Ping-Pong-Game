@@ -1,0 +1,69 @@
+:root {
+    --time-duration: 9s;
+  }
+  /* Setting the playground for pong game*/
+  body {
+    margin: 0px;
+    background-color: wheat;
+  }
+  body::-webkit-scrollbar {
+    overflow: hidden;
+    display: none;
+  }
+  h3 {
+    margin: 0px;
+  }
+  /* Designing the rod 1*/
+  #rod1 {
+    position: absolute;
+    top: 1%;
+    background-color: turquoise;
+    border: 2px solid black;
+    width: 20vw;
+    box-sizing: border-box;
+    border-radius: 18px;
+    height: 4.5vh;
+    padding: 2px;
+    text-align: center;
+  }
+  /* Designing the rod 2*/
+  #rod2 {
+    position: absolute;
+    bottom: 1%;
+    background-color: lightskyblue;
+    border-radius: 18px;
+    border: 2px solid black;
+    width: 20vw;
+    box-sizing: border-box;
+    height: 4.5vh;
+    padding: 2px;
+    text-align: center;
+  }
+  /* Designing the ball*/
+  #ball {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: radial-gradient(red 2%, black 221%);
+    box-sizing: border-box;
+  }
+  /*adding animation property for ball and rod to bounce*/
+  .animate-top-right {
+    transition: transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(-2000px);
+  }
+  .animate-bottom-right {
+    transition: transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(2000px);
+  }
+  .animate-top-left {
+    transition: transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(-2000px);
+  }
+  .animate-bottom-left {
+    transition: transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(2000px);
+  }
+  /*End of css*/
+  
